@@ -9,7 +9,6 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
     <link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
 
 </head>
@@ -54,15 +53,84 @@
                 </ul>
             </div>
 
-            <div class="draggable window align-self-center" id="internetWindow" style="z-index:2000">
+            <div class="draggable window align-self-start" id="internetWindow" style="z-index:2000">
                 <h2>
-                    <span></span>
+                    <span class="pull-left"></span>
                     Internet Explorer - IE7
                 </h2>
+                <ul class="window_control pull-right">
+                    <li class="min">
+                        <a title='Minimise'>
+                            <span></span>
+                            Minimise
+                        </a>
+                    </li>
+                    <li class="max">
+                        <a title='MAximise'>
+                            <span></span>
+                            MAximise
+                        </a>
+                    </li>
+                    <li class="closee">
+                        <a title='Close'>
+                            <span></span>
+
+                        </a>
+                    </li>
+                </ul>
+                <div class="windowBlueBorder">
+                    <ul class="fileMenu">
+                        <li>
+                            <a>File</a>
+                        </li>
+                        <li>
+                            <a>Edit</a>
+                        </li>
+                        <li>
+                            <a>Favorites</a>
+                        </li>
+                        <li>
+                            <a>Tools</a>
+                        </li>
+                        <li>
+                            <a>Help</a>
+                        </li>
+                        <li class="windowslogo"><img src="./assets/img/windowslogo.png" alt="windowslogo"></li>
+                    </ul>
+                    <div class="toolbar">
+                        <a title="Back" id="ieBack"><img src="./assets/img/ie1.png" alt="ie toolbar"></a>
+                        <a title="Forward" id="ieForward"><img src="./assets/img/ie2.png" alt="ie toolbar"></a>
+                        <a title="Stop"><img src="./assets/img/ie3.png" alt="ie toolbar"></a>
+                        <a title="Refresh"><img src="./assets/img/ie4.png" alt="ie toolbar"></a>
+                        <a title="Home" id="ieHome"><img src="./assets/img/ie5.png" alt="ie toolbar"></a>
+                        <img src="./assets/img/ie-sep.png" alt="ie separator">
+                        <a class="hidden-xs" title="Search" id="ieSearch"><img src="./assets/img/ie6.png" alt="ie toolbar"></a>
+                        <a class="hidden-xs" title="Favorites"><img src="./assets/img/ie7.png" alt="ie toolbar"></a>
+                        <a class="hidden-xs" title="Media"><img src="./assets/img/ie8.png" alt="ie toolbar"></a>
+                        <a class="hidden-xs" title="History"><img src="./assets/img/ie9.png" alt="ie toolbar"></a>
+                        <img src="./assets/img/ie-sep.png" class="hidden-xs" alt="ie separator">
+                        <a class="hidden-xs" title="Mail"><img src="./assets/img/ie10.png" alt="ie toolbar"></a>
+                        <a class="hidden-xs" title="Print"><img src="./assets/img/ie11.png" alt="ie toolbar"></a>
+                        <a class="hidden-xs"><img src="./assets/img/ie12.png" alt="ie toolbar"></a>
+                    </div>
+                    <div class="addressBar">
+                        <span>Address</span>
+                        <div class="wrapAddressInput">
+                            <img src="./assets/img/ie-addressbar-ico.png" alt="ie icon">
+                            <input name="addressBarInput" id="webAddressInput" type="text" value="google.com">
+                            <div class="dropdown-ico">
+                            </div>
+                        </div>
+                        <div class="greenGo" id="goToWebAddress">
+                            <img src="./assets/img/greenGo.png" alt="dropdown ico"> Go
+                        </div>
+                        <div class="ieLinks">
+                            Links <img src="./assets/img/ieLinks.png" alt="ieLinks ico">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="draggable window">
-                <p> with each pointer </p>
-            </div>
+
         </div>
     </div>
 

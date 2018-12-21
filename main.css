@@ -2,6 +2,9 @@
     font-family: Times;
     src: url(./assets/fonts/Times\ New\ Roman.ttf);
   }
+
+
+
 img.bg {
     min-height: 100%;
     min-width: 1024px;
@@ -48,7 +51,8 @@ img.bg {
 .window{
     background: #ffffff;
     height: fit-content;
-
+    position: absolute;
+    cursor:default
 }
 .iconsCol{
     height: -webkit-fill-available;
@@ -58,12 +62,213 @@ img.bg {
     font-size: 12px;
     line-height: 250%;
     color: #FFF;
-    background: url(/img/window_bar.png);
+    background-image: url(./assets/img/window_bar.png);
+    margin: 0;
     text-shadow: 1px 1px 1px #000;
-    
 }
 #internetWindow {
     left: 175px;
-    top: 42px;
-    width: 950px;
+    margin-top: 7%;
+    width: 67%;
 }
+.window h2 span {
+
+    width: 26px;
+    height: 29px;
+    display: inline-block;
+    float: left;
+}
+.window#internetWindow h2 span {
+    background: url(./assets/img/window_corners3.png);
+}
+ul.window_control {
+    right: -11px;
+    top: 0;
+    overflow: hidden;
+    position: absolute;
+}
+ul.window_control li {
+
+    display: inline-block;
+}
+ul.window_control li a {
+    width: 28px;
+    height: 24px;
+    display: block;
+    overflow: hidden;
+}
+ul.window_control li a span {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: transparent url(./assets/img/window_buttons.png) no-repeat 0 0;
+}
+/* ul.window_control li.min a:hover span{
+    background-position: -3px -30px;
+} */
+ul.window_control li.max a span {
+    background-position: -243% 0;
+}
+ul.window_control li.closee a span {
+    background-position: -64px 0px;
+}
+.windowBlueBorder {
+    min-height: 100px;
+    border: 3px solid #0831D9;
+    border-top: none;
+    /* height: 100%; */
+}
+ul.fileMenu {
+    background-color: #F0F0E7;
+    border-bottom: 1px solid #D8D2BD;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+ul.fileMenu li {
+    display: inline-block;
+    padding: 0px 3px;
+    list-style: none;
+}
+ul.fileMenu li a {
+    display: inline-block;
+    color: #000!important;
+    padding: 2px 3px;
+    letter-spacing: 0px;
+    border: 1px solid #F0F0E7;
+    font-size: 11px;
+    /* padding: 0; */
+    margin: 0;
+    font-weight: 640;
+}
+ul.fileMenu li a:hover {
+    border: 1px solid #D8D2BD;
+    background-color: #FFF;
+}
+ul.fileMenu li.windowslogo {
+    float: right;
+    padding: 0;
+}
+.toolbar {
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #D8D2BD;
+    background-color: #EFEDE0;
+    padding: 0 3px;
+}
+.toolbar a {
+    display: inline-block;
+    border: 1px solid #EFEDE0;
+}
+.toolbar a:hover {
+    border: 1px solid #7A98AF;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+}
+.addressBar {
+    background-color: #EFECDC;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #CDCABB;
+    display: flex;
+}
+.addressBar span {
+    display: inline-block;
+    color: #7F7C73;
+    padding: 0px 15px 0;
+    letter-spacing: 0px;
+    font-size: 12px;
+}
+.wrapAddressInput {
+    border: 1px solid #7F9DB9;
+    vertical-align: middle;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    background-color: #fff;
+    padding: 1px 0 0px 0;
+}
+.wrapAddressInput img {
+    margin: 0 2px 0 5px;
+    height: 16px;
+}
+#internetWindow .wrapAddressInput input {
+    font-size: 11px;
+}
+.wrapAddressInput input {
+    border: none;
+    width: 100%;
+    padding-left: 3px;
+    height: 15px;
+}
+.dropdown-ico {
+    width: 20px;
+    height: 18px;
+    background: url(./assets/img/dropdown-ico.png) no-repeat top center;
+    margin: -1px -1px 0 0px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.dropdown-ico:hover {
+    background: url(./assets/img/dropdown-ico.png) no-repeat bottom center;
+}
+#internetWindow .greenGo {
+    border-right: 1px solid #D8D2BD;
+}
+.greenGo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 63px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    font-weight: 500;
+}
+.greenGo img {
+    max-height: 19px;
+    margin-right: 2px;
+    vertical-align: middle;
+    margin-left: 4px;
+    margin-bottom: 2px;
+}
+.ieLinks {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #7F7C73;
+    border-left: 1px solid #FFF;
+    padding: 1px 2px 1px 5px;
+}
+.ieLinks img {
+    vertical-align: top;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+  /* // Extra small devices (portrait phones, less than 576px) */
+  @media (max-width: 575.98px) { 
+    #internetWindow {
+        left: 108px;
+        margin-top: 28%;
+        width: 78%;
+        margin-left: -12%;
+    }
+    ul.window_control {
+        width: 33%;
+        padding: 0;
+        height: 22%;
+    }
+   }
+  
+  /* // Small devices (landscape phones, less than 768px) */
+  @media (max-width: 767.98px) {  }
+  
+  /* // Medium devices (tablets, less than 992px) */
+  @media (max-width: 991.98px) {  }
+  
+  /* // Large devices (desktops, less than 1200px) */
+  @media (max-width: 1199.98px) {  }
+  
+  /* // Extra large devices (large desktops)
+  // No media query since the extra-large breakpoint has no upper bound on its width */
