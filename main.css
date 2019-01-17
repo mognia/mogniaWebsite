@@ -393,6 +393,11 @@ border-bottom: 1px solid #0000001f;
         padding: 0px;
         height: 4%;
     }
+    #aboutMe ul.window_control {
+        width: 26.9%;
+        padding: 0px;
+        height: 4.2%;
+    }
     ul.window_control li.max a span {
         background-position: -204% 0;
     }
@@ -408,9 +413,17 @@ ul.window_control li a span {
 }
 #aboutMe{
     z-index: 3000;
-    transform: translate(27px, 7px);
-    width: 81%;
+    transform: translate(9px, 7px);
+    width: 93%;
 }
+.toolbar a{
+    max-width: 60px;
+}
+.wrapAddressInput{
+    width: 60%;
+
+}
+.right{overflow-x: hidden;height: 328px;}
    }
   
   /* // Small devices (landscape phones, less than 768px) */
