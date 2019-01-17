@@ -66,4 +66,12 @@ $('#IeCloseBtn').click(function() {
 $('#Works').click(function() {
   $("#internetWindow").css("display", "unset");
   
+});
+$('#AboutCloseBtn').click(function() {
+  $("#aboutMe").css("display", "none");
+  
+});
+$('#About').click(function() {
+  $("#aboutMe").css("display", "unset");
+  
 })

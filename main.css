@@ -2,6 +2,10 @@
     font-family: Times;
     src: url(./assets/fonts/Times\ New\ Roman.ttf);
   }
+  @font-face {
+    font-family: Trebuchet;
+    src: url(./assets/fonts/Trebuchet\ MS.ttf);
+  }
 
 
 
@@ -84,7 +88,7 @@ img.bg {
 .window_control{
     background: transparent url(./assets/img/def-buts.png) no-repeat;
     padding: 0;
-    width: 7%;
+    width: 7.12%;
     height: 27px;
 }
 ul.window_control {
@@ -127,6 +131,7 @@ ul.window_control li.closee a span {
     border: 3px solid #0831D9;
     border-top: none;
     /* height: 100%; */
+    padding: 0;
 }
 ul.fileMenu {
     background-color: #F0F0E7;
@@ -282,13 +287,99 @@ ul.fileMenu li.windowslogo {
     margin-left: 23%;
 }
 .card-title{
-    text-align: center;
-    font-size: 24px;
-    font-weight: 700;
-    border-bottom: 1px solid;
-    font-family: cursive;
+    
+text-align: center;
+    
+font-size: 24px;
+    
+font-weight: 700;
+    
+border-bottom: 1px solid;
+    
+font-family: cursive;
+
+}
+#aboutMe{
+    transform: translate(763px, 52px);
+    width: 51%;
+}
+#aboutMe .window_control{
+    
+width: 11.5%;
+}
+#aboutMe .addressBar input{
+    font-size: 12px;
+}
+.window#aboutMe h2 span{
+    background: url(./assets/img/window_corners2.png);
+    width: 26px;
+    height: 29px;
+    display: inline-block;
+
+}
+.leftPanelPanel {
+    border: 1px solid #FFF;
+    border-radius: 3px 3px 0 0;
+}
+.leftPanelPanel h3 {
+    display: block;
+    overflow: hidden;
+    color: #215DC6;
+    background: #FFFFFF;
+    background: -moz-linear-gradient(left, #FFFFFF 0%, #C7D3F7 100%);
+    background: -webkit-linear-gradient(left, #FFFFFF 0%, #C7D3F7 100%);
+    background: linear-gradient(to right, #FFFFFF 0%, #C7D3F7 100%);
+    height: 20px;
+    line-height: 18px;
+    font-family: Trebuchet;
+    padding-left: 13px;
+    font-weight: 1000;
+    margin: 0;
+    font-size: 12px;
+}
+.twoPanelWindow .left{
+    padding: 13px;
+    /* width: 256px; */
+    background: #7BA2E7;
+    background: -moz-linear-gradient(top, #7BA2E7 0%, #6375D6 100%);
+    background: -webkit-linear-gradient(top, #7BA2E7 0%, #6375D6 100%);
+    background: linear-gradient(to bottom, #7BA2E7 0%, #6375D6 100%);
+} 
+.leftPanelPanel div {
+    background-color: #D6DFF7;
+    color: #215DC6;
+}
+.leftPanelPanel ul{
+    list-style: none;
+    padding: 5px 9px;
+    margin: 0;
+}
+.leftPanelPanel ul li {
+    line-height: 12px;
+    margin: 14px 0;
+    font-size: 14px;
+}
+.WhatDoIknow .header{
+    
+padding: 12px;
+    
+font-size: 20px;
+    
+font-weight: 700;
+    
+border-bottom: 1px solid #0000001f;
+}
+.right{
+    overflow-y: scroll
+}
+.IknowBox{
+    text-align: center;
 }
 
+    .IknowBoxImg{
+    width: 78px;
+    margin: 13px 0;
+    }
   /* // Extra small devices (portrait phones, less than 576px) */
   @media (max-width: 575.98px) { 
     #internetWindow {
@@ -314,6 +405,11 @@ ul.window_control li a span {
     width: 23em;
     height: 2em;
     margin-left: -13%;
+}
+#aboutMe{
+    z-index: 3000;
+    transform: translate(27px, 7px);
+    width: 81%;
 }
    }
   
