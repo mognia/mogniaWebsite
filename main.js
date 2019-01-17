@@ -56,3 +56,14 @@ function dragMoveListener (event) {
 
 // this is used later in the resizing and gesture demos
 window.dragMoveListener = dragMoveListener;
+
+
+
+$('#IeCloseBtn').click(function() {
+  $("#internetWindow").css("display", "none");
+  
+});
+$('#Works').click(function() {
+  $("#internetWindow").css("display", "unset");
+  
+})
