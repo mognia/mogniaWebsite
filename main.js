@@ -74,4 +74,12 @@ $('#AboutCloseBtn').click(function() {
 $('#About').click(function() {
   $("#aboutMe").css("display", "unset");
   
-})
+});
+$('#ContactCloseBtn').click(function() {
+  $("#Contact").css("display", "none");
+  
+});
+$('#ContactIcon').click(function() {
+  $("#Contact").css("display", "unset");
+  
+});

@@ -304,13 +304,39 @@ font-family: cursive;
     width: 51%;
 }
 #aboutMe .window_control{
-    
-width: 11.5%;
+    width: 91.9px;
 }
 #aboutMe .addressBar input{
     font-size: 12px;
 }
 .window#aboutMe h2 span{
+    background: url(./assets/img/window_corners2.png);
+    width: 26px;
+    height: 29px;
+    display: inline-block;
+
+}
+#Contact{
+    transform: translate(163px, 52px);
+    width: 41%;
+    display: none;
+}
+#Contact .window_control{
+    
+width: 14%;
+    }
+    .infoTxt p{
+        display: inline;
+    }
+    .infoTxt .title{
+        font-weight: 800;
+    }
+    .infoTxt{
+        margin: 18px 0;
+        padding: 12px 0;
+        border-bottom: 1px solid #00000029;
+    }
+.window#Contact h2 span{
     background: url(./assets/img/window_corners2.png);
     width: 26px;
     height: 29px;
@@ -380,6 +406,11 @@ border-bottom: 1px solid #0000001f;
     width: 78px;
     margin: 13px 0;
     }
+    .iconContainer a:hover{
+        text-decoration: none;
+        cursor: default;
+    }
+    
   /* // Extra small devices (portrait phones, less than 576px) */
   @media (max-width: 575.98px) { 
     #internetWindow {
@@ -424,6 +455,14 @@ ul.window_control li a span {
 
 }
 .right{overflow-x: hidden;height: 328px;}
+#Contact {
+    transform: translate(17px, 52px);
+    width: 100%;
+}
+#Contact .window_control {
+    width: 25%;
+    height: 6%;
+}
    }
   
   /* // Small devices (landscape phones, less than 768px) */
