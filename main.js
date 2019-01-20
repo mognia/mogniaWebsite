@@ -1,4 +1,11 @@
 
+  var isChromium = navigator.userAgent.indexOf('Chrome') != -1 && parseFloat(navigator.userAgent.substring(navigator.userAgent.indexOf('Chrome') + 7).split(' ')[0]) >= 15;
+  if (!isChromium) {
+    console.log('Not Chrome');
+    
+  }
+
+
 let haveClasss = $( "#iconArea" ).hasClass( "oneClick" );
 interact('#iconArea')
   .on('tap', function (event) {
@@ -82,4 +89,28 @@ $('#ContactCloseBtn').click(function() {
 $('#ContactIcon').click(function() {
   $("#Contact").css("display", "unset");
   
+});
+
+
+function onReady(callback) {
+  var intervalID = window.setInterval(checkReady, 3000);
+
+  function checkReady() {
+      if (document.getElementsByTagName('body')[0] !== undefined) {
+          window.clearInterval(intervalID);
+          callback.call(this);
+      }
+  }
+}
+
+function show(id, value) {
+  document.getElementById(id).style.display = value ? '-webkit-box' : 'none';
+}
+
+onReady(function () {
+  show('page', true);
+  show('imgBg', true);
+  show('Loading', false);
+  document.getElementById('imgBg').style.display = "unset";
+  $("#imgBg").css("display", "unset");
 });

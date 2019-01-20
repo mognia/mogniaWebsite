@@ -7,8 +7,101 @@
     src: url(./assets/fonts/Trebuchet\ MS.ttf);
   }
 
+  @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,700');
 
+/* Loader Css */
+#Loading{
+    display: unset;
+}
+#page{
+    display: none;
+}
+body{
+    background: #000;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+#imgBg{
+    display: none;
+}
+.Loading .wiindow{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+  .Loading .container{
+    width: 150px;
+    height: 10px;
+    border: 2px solid #b2b2b2;
+    border-radius: 7px;
+    margin: 0 auto;
+    padding: 2px 1px;
+    overflow: hidden;
+    font-size: 0;
+  }
+  .Loading .box{
+    width: 9px;
+    height: 100%;
+    background: linear-gradient(to bottom, #2838c7 0%,#5979ef 17%,#869ef3 32%,#869ef3 45%,#5979ef 59%,#2838c7 100%);
+    display: inline-block;
+    margin-right: 2px;
+    animation: loader 2s infinite;
+    animation-timing-function: linear;
+  }
+  .Loading .logo{
+    width: 220px;
+    margin: 50px auto;
+  }
+  .Loading .logo p{
+    margin: 0;
+    padding: 0;  
+  }
+  .Loading .top{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 16px;
+  }
+  .Loading .top:after{
+    content:"\00a9";
+    font-size: 10px;
+    position: relative;
+    top: -5px;
+    margin-left: 2px;
+  }
+  .Loading .mid{
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 36px;  
+  }
+  .Loading .mid span{
+    font-size: 22px;
+    display: inline-block;
+    vertical-align: top;
+    color: #FF6821;
+    margin-top: -46px;
+    margin-left: 91%;
+  }
+  .Loading .logo .bottom{
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-left: 5px;
+    
+  }
+  @keyframes loader{
+    0%{
+      transform: translate(-30px);
+    }
+    100%{
+      transform: translate(150px);
+    }
+  }
 
+  
+
+/* Page Css */
 img.bg {
     min-height: 100%;
     min-width: 1024px;
@@ -20,7 +113,7 @@ img.bg {
 }
 .iconContainer{
     list-style: none;
-    padding: 48% 0 0 26%;
+    padding: 48% 0 0 23%;
 }
 .icon{
     display: block;
@@ -56,7 +149,8 @@ img.bg {
     background: #ffffff;
     height: fit-content;
     position: absolute;
-    cursor:default
+    cursor:default;
+    color: #000;
 }
 .iconsCol{
     height: -webkit-fill-available;
@@ -71,7 +165,7 @@ img.bg {
     text-shadow: 1px 1px 1px #000;
 }
 #internetWindow {
-    left: 175px;
+    left: 117px;
     margin-top: 7%;
     width: 82%;
 }
@@ -231,7 +325,7 @@ ul.fileMenu li.windowslogo {
 .greenGo {
     display: inline-block;
     vertical-align: middle;
-    width: 63px;
+    width: 65px;
     line-height: 20px;
     font-size: 12px;
     color: #000;
@@ -304,7 +398,8 @@ font-family: cursive;
     width: 51%;
 }
 #aboutMe .window_control{
-    width: 91.9px;
+    
+width: 91.9px;
 }
 #aboutMe .addressBar input{
     font-size: 12px;
@@ -413,21 +508,28 @@ border-bottom: 1px solid #0000001f;
     
   /* // Extra small devices (portrait phones, less than 576px) */
   @media (max-width: 575.98px) { 
+    .hidden-xs{
+        display: none!important;
+    }
     #internetWindow {
-        left: 111px;
-        margin-top: 28%;
-        width: 93%;
-        margin-left: -18%;
+        /* left: 32px; */
+        /* margin-top: 28%; */
+        /* width: 93%; */
+        /* margin-left: -18%; */
+        transform: translate(-125px, -19px);
+    }
+    .ie_inner {
+        height: 400px;
     }
     ul.window_control {
-        width: 27.9%;
+        width: 92px;
         padding: 0px;
-        height: 4%;
+        /* height: 37px; */
     }
     #aboutMe ul.window_control {
         width: 26.9%;
         padding: 0px;
-        height: 4.2%;
+        height: 5.2%;
     }
     ul.window_control li.max a span {
         background-position: -204% 0;
@@ -438,9 +540,9 @@ ul.window_control li a span {
     height: 18%;
 }
 .goldenDivider {
-    width: 23em;
+    width: 33em;
     height: 2em;
-    margin-left: -13%;
+    margin-left: -53%;
 }
 #aboutMe{
     z-index: 3000;
@@ -454,7 +556,7 @@ ul.window_control li a span {
     width: 60%;
 
 }
-.right{overflow-x: hidden;height: 328px;}
+.right{overflow-x: hidden;height: 435px;}
 #Contact {
     transform: translate(17px, 52px);
     width: 100%;
@@ -463,7 +565,26 @@ ul.window_control li a span {
     width: 25%;
     height: 6%;
 }
+.web_header .en {
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    border-bottom: 1px;
+    text-align: center;
+}
+.small, small {
+    font-size: 62%;
+    font-weight: 400;
+}
+.leftPanelPanel ul li {
+    line-height: 18px;
+}
+.WhatDoIknow .header {
+
+    font-size: 17px;
    }
+   .greenGo {
+    width: 65px
+}
   
   /* // Small devices (landscape phones, less than 768px) */
   @media (max-width: 767.98px) {  }
