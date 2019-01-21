@@ -1,10 +1,12 @@
 
-  var isChromium = navigator.userAgent.indexOf('Chrome') != -1 && parseFloat(navigator.userAgent.substring(navigator.userAgent.indexOf('Chrome') + 7).split(' ')[0]) >= 15;
-  if (!isChromium) {
-    console.log('Not Chrome');
-    
-  }
+var is_chrome = (typeof window.chrome === "object" && navigator.appVersion.indexOf('Edge') === -1);
+if (!is_chrome) {
 
+  show('notChrome', true);
+}
+$('#notChrome').click(function(e) {  
+  show('notChrome', false);
+});
 
 let haveClasss = $( "#iconArea" ).hasClass( "oneClick" );
 interact('#iconArea')
@@ -104,7 +106,7 @@ function onReady(callback) {
 }
 
 function show(id, value) {
-  document.getElementById(id).style.display = value ? '-webkit-box' : 'none';
+  document.getElementById(id).style.display = value ? 'block' : 'none';
 }
 
 onReady(function () {
